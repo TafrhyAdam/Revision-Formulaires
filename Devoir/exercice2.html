@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+</head>
+<body>
+    <!-- Question 2 -->
+    <form action="exercice2.php" method="post">
+        <label for="nom">Nom de l'employé :</label>
+        <input type="text" name="nom"><br>
+        <button type="submit">Envoyer</button>
+    </form>
+    <br>
+    <!-- Question 3 -->
+    <form action="exercice2.php" method= "post">
+        <label for="nom">Email :</label>
+        <input type="text" name="email"><br>
+        <label for="mdp">Mot de passe</label>
+        <input type="password" name="mdp"><br>
+        <button type="submit">Enregistrer</button>
+    </form>
+    <br>
+    <!-- Question 4-->
+    <form action="exercice2.php" method="post">
+        <label for= "produit">Selectionner un produit: </label>
+        <select name="produit">
+            <option value="Apple watch series 10">Apple watch series 10</option>
+            <option value="Airpods 4">Airpods 4</option>
+            <option value="Iphone 16">Iphone 16</option>
+        </select><br>
+        <label for="quantite">Entrer la quantite: </label>
+        <input type="number" name="quantite"><br>
+        <button type="submit">Ajouter au panier</button>
+    </form>
+    
+    <br>
+    <!-- Question 5 -->
+    <form action="exercice2.php" method="post">
+        <label for="commentaire">Commentaire :</label>
+        <input type="text" name="commentaire"></input><br>
+
+        <button type="submit">Envoyer le commentaire</button>
+    </form>
+
+    <br>
+    <!-- Question 7-->
+    <form action="exercice2.php" method="POST" enctype="multipart/form-data">
+        <label for="fichier">Entrez un fichier CSV :</label>
+        <input type="file" name="fichier" /><br>
+        <button type="submit">Envoyer</button>
+    </form>
+    
+    <br>
+
+    <!-- Question 8 -->
+    <form action="exercice2.php" method="post">
+        <label>Apple Watch </label>
+        <input type="checkbox" name="prds[]" value="Apple Watch">
+
+        <label>Airpods</label>
+        <input type="checkbox" name="prds[]" value="Airpods" >
+
+        <label>iPhone 16</label>
+        <input type="checkbox" name="prds[]" value="iPhone 16">
+
+        <label>Macbook Pro</label>
+        <input type="checkbox" name="prds[]" value="Macbook Pro">
+
+        <button type="submit">Envoyer</button>
+    </form>
+    <!-- Question 10 -->
+    <h3>Gestion des utilisateurs</h3>
+    <form action="exercice2.php" method="post">
+        <label for="pseudo_nouveau">Entrez le pseudo: </label>
+        <input type="text" name="pseudo_nouveau"><br>
+        <label for="mail_nouveau">Entrez le mail: </label>
+        <input type="email" name="mail_nouveau"><br>
+        <button type="submit" name="envoyer" value="ajouter">Ajouter</button><br>
+        <br>
+        <label>Entrer le pseudo de l'utilisateur a modifier:</label>
+        <input type="text" name="pseudo_ancien"><br>
+        <label>Entrer le nouveau pseudo</label>
+        <input type="text" name="pseudo_modifier"><br>
+        <label>Entrez le nouveau mail: </label>
+        <input type="email" name="mail_modifier"><br>
+        <button type="submit" name="envoyer" value="modifier">Modifier</button><br>
+        <br>
+        <label>Entrer le pseudo a Supprimer: </label>
+        <input type="text" name="pseudo_supprimer"><br>
+        <button type="submit" name="envoyer" value="supprimer">Supprimer</button><br>
+
+    </form>
+</body>
+</html>

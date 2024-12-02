@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+</head>
+<body>
+    <!-- Question 6 -->
+    <form action="exercice1.php" method="post">
+        <label for="nom">Nom:</label><br>
+        <input type="text" name="nom"><br>
+        <label for="age">Age: </label><br>
+        <input type="number" name="age"><br>
+        <button type="submit">Envoyer</button><br>
+    </form>
+    <!-- Question 8 -->
+    <form action="exercice1.php" method="post">
+        <select name="couleur">
+            <option>Rouge</option>
+            <option>Vert</option>
+            <option>Bleu</option>
+        </select><br>
+        <button type="submit">Envoyer la couleur</button><br>
+    </form>
+    <!-- Question 9 -->
+    <form action="exercice1.php" method="get">
+        <label for="nombre">Nombre 1:</label><br>
+        <input type="number" name="nombres[]"><br>
+        <label for="nombre">Nombre 2: </label><br>
+        <input type="number" name="nombres[]"><br>
+        <button type="submit">Envoyer</button>
+    </form>
+    <!-- Question 10 -->
+    <form action="exercice1.php" method="post">
+        <select name="type_compte[]">
+            <option>Administrateur</option>
+            <option>Utilisateur</option>
+        </select><br>
+        <button type="submit">Envoyer</button><br>
+    </form>
+
+
+    
+</body>
+</html>
